@@ -1,0 +1,39 @@
+{
+  "name": "node-find-files",
+  "version": "0.0.4",
+  "description": "A Node Module for finding files by attributes. Originally developed to find files modified since a particular date.",
+  "homepage": "",
+  "keywords": [
+    "find",
+    "files",
+    "recursive",
+    "mtime",
+    "last modified",
+    "nodejs",
+    "js"
+  ],
+  "author": "Ben Sudbury <bsudbury@gmail.com>",
+  "dependencies": {
+    "async": "0.2.6"
+  },
+  "devDependencies": {
+    "mocha": "1.8.1",
+    "mocks": "0.0.1",
+    "should": "1.2.2"
+  },
+  "main": "./lib/node-find-files",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sudsy/node-find-files.git"
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "c8d96f00566700f2cc3a2b1b9d2bfce09a4e9e55",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "license": "BSD"
+}
