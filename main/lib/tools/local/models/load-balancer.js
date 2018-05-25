@@ -105,7 +105,7 @@ module.exports = (section, logger, {docker, helper, cluster}) => {
             ExposedPorts: {},
             HostConfig: {
                 CapAdd: [ "NET_ADMIN" ],
-                SecurityOpt: ["apparmor=docker-default"],
+                SecurityOpt: ["apparmor:unconfined"],
                 PortBindings: {},
                 Binds: [
                     delta.config.haProxyConfigPath + ':' + '/etc/haproxy/haproxy.cfg'
