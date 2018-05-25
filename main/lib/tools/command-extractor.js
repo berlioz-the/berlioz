@@ -8,7 +8,7 @@ module.exports = function(logger, rootFolder)
         var results = [];
 
         var commonFolder = Path.resolve(__dirname, '..');
-        logger.verbose('Extracing commands from %s...', rootFolder);
+        logger.verbose('Extracting commands from %s...', rootFolder);
 
         var finder = new FindFiles({
             rootFolder: rootFolder,

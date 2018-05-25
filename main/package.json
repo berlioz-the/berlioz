@@ -32,11 +32,12 @@
     "the-logger": "^1.0.38",
     "the-promise": "^1.0.27",
     "tmp": "0.0.33",
-    "vorpal": "^1.12.0"
+    "vorpal": "^1.12.0",
+    "yamljs": "^0.3.0"
   },
   "bin": {
-      "berlioz": "./bin/berlioz.js",
-      "berlioz-debug": "./bin/debug.js"
+    "berlioz": "./bin/berlioz.js",
+    "berlioz-debug": "./bin/debug.js"
   },
   "author": "berlioz",
   "license": "Apache-2.0"
