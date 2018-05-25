@@ -92,7 +92,8 @@ module.exports = (section, logger, {docker, helper, cluster}) => {
             Labels: labels,
             ExposedPorts: {},
             HostConfig: {
-                PortBindings: {}
+                PortBindings: {},
+                SecurityOpt: ["apparmor=docker-default"]
             },
             Env: []
         };

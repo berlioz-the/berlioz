@@ -201,8 +201,9 @@ class LocalProcessor extends ModelProcessor
 
     _prepareBerliozAgentImage()
     {
-        var imageName = 'berlioz-agent';
+        var imageName = 'berliozcloud/agent';
         return Promise.resolve()
+            .then(() => this._docker.pullImage(imageName))
             .then(() => this._docker.getImage(imageName))
             .then(result => this._repositories['berlioz/agent'] = {
                 image: imageName,
