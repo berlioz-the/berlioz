@@ -1,6 +1,6 @@
 {
   "name": "berlioz",
-  "version": "1.0.22",
+  "version": "1.0.24",
   "description": "",
   "main": "index.js",
   "preferGlobal": true,
@@ -10,7 +10,7 @@
   "dependencies": {
     "aws-arn-parser": "^1.0.0",
     "aws-sdk": "2.235.1",
-    "aws-sdk-wrapper": "^1.0.127",
+    "aws-sdk-wrapper": "^1.0.129",
     "awscred": "^1.4.1",
     "child-process-promise": "^2.2.1",
     "chrome-launcher": "^0.10.2",
