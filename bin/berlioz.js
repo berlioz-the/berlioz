@@ -5,7 +5,7 @@ const logger = require('the-logger').setup('bunyan', 'berlioz', {
     cleanOnStart: false,
     pretty: true
 });
-logger.level = 'info';
+logger.level = 'error';
 
 var rootDir = process.cwd();
 logger.verbose('Root Dir: %s', rootDir);
