@@ -201,11 +201,11 @@ Downloads service template from the public repository.
 
 Builds and pushes the images to the cloud.
 
-Executes the [build](build) command and once the build is complete, pushes the images to the cloud. It is important to note that this command does not deploy the software version. It only makes it available for one click deployment.
+Executes the [build](#build) command and once the build is complete, pushes the images to the cloud. It is important to note that this command does not deploy the software version. It only makes it available for one click deployment.
 
-To deploy the cluster refer to [provision](provision) command.
+To deploy the cluster refer to [provision](#provision) command.
 
-Just like with the [build](build) command, this command should be called from the project root directory.
+Just like with the [build](#build) command, this command should be called from the project root directory.
 
 ## signup
 
