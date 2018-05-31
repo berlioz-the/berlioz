@@ -1,1 +1,19 @@
-Builds the images from current project.
+Builds Docker images from current project.
+
+Should be used from the root directory of the project.
+Can be used to build images for one or multiple clusters.
+
+The tool will be searching for service definitions in **Berliozfile** files
+within the current directory. It will then build **Dockerfile** files in the same
+directory.
+
+```
+cluster_one/
+    Berliozfile        # Definition of the cluster_one
+    service_one/
+        Berliozfile    # Definition of the service_one
+        Dockerfile
+    service_two/
+        Berliozfile    # Definition of the service_two
+        Dockerfile
+```

@@ -1,158 +1,218 @@
 # Berlioz Command Line Interface
 
 
-## build ##
-Builds the images from current project.
+## build
 
 
-## cluster describe ##
+Builds Docker images from current project.
+
+Should be used from the root directory of the project. Can be used to build images for one or multiple clusters.
+
+The tool will be searching for service definitions in **Berliozfile** files within the current directory. It will then build **Dockerfile** files in the same directory.
+
+```
+cluster_one/
+    Berliozfile        # Definition of the cluster_one
+    service_one/
+        Berliozfile    # Definition of the service_one
+        Dockerfile
+    service_two/
+        Berliozfile    # Definition of the service_two
+        Dockerfile
+```
+
+## cluster describe
+
+
 Displays cluster definitions.
 
+## cluster list
 
-## cluster list ##
+
 Outputs the list of clusters.
 
+## cluster versions
 
-## cluster versions ##
+
 Outputs the version history of cluster defnitions.
 
+## deployment cluster list
 
-## deployment cluster list ##
+
 Outputs the list of deployments.
 
+## deployment cluster versions
 
-## deployment cluster versions ##
+
 Outputs the versions of deployment clusters.
 
+## deployment create
 
-## deployment create ##
+
 Creates a new deployment.
 
+## deployment delete
 
-## deployment delete ##
+
 Deletes an existing deployment.
 
+## deployment dns get
 
-## deployment dns get ##
+
 Gets configured service domain name for the deployment.
 
+## deployment dns set
 
-## deployment dns set ##
+
 Sets service domain name for the deployment.
 
+## deployment get-configs
 
-## deployment get-configs ##
+
 Displays dynamic deployment configuration.
 
+## deployment list
 
-## deployment list ##
+
 Outputs the list of deployments.
 
+## deployment processor logs
 
-## deployment processor logs ##
+
 Outputs logs of berlioz deployer robot.
 
+## deployment scale get
 
-## deployment scale get ##
+
 Gets the configured number of running instances for a service.
 
+## deployment scale set
 
-## deployment scale set ##
+
 Sets the number of running instances for a service.
 
+## deployment set-config
 
-## deployment set-config ##
+
 Configures deployment dynamic values.
 
+## deployment status
 
-## deployment status ##
+
 Displays current status of the deployment.
 
+## endpoints
 
-## endpoints ##
+
 Outputs publicly exposed endpoints of the deployment.
 
+## local account
 
-## local account ##
+
 Setup AWS account profile name for local deployment native resources.
 
+## local endpoints
 
-## local endpoints ##
+
 Outputs publicly exposed endpoints of the deployment.
 
+## local get-configs
 
-## local get-configs ##
+
 Displays current configuration.
 
+## local provision
 
-## local provision ##
+
 Starts the service on a local workstation.
 
+## local push
 
-## local push ##
+
 Builds and pushes the images to local deployment store.
 
+## local push-provision
 
-## local push-provision ##
+
 Builds and pushes the images to local deployment store.
 
+## local scale get
 
-## local scale get ##
+
 Specifies number of service instances to deploy on a local workstation.
 
+## local scale set
 
-## local scale set ##
+
 Specifies number of service instances to deploy on a local workstation.
 
+## local unprovision
 
-## local unprovision ##
+
 Starts the service on a local workstation.
 
+## login
 
-## login ##
+
 Logs in to Berlioz account.
 
+## logout
 
-## logout ##
+
 Logs out from Berlioz account.
 
+## output-definitions
 
-## output-definitions ##
+
 Outputs Berlioz definitions in current project.
 
+## output-diagram
 
-## output-diagram ##
+
 Renders Berlioz definition diagram in current project.
 
+## provider create
 
-## provider create ##
+
 Links cloud provider account.
 
+## provider delete
 
-## provider delete ##
+
 Unlinks cloud provider account.
 
+## provider list
 
-## provider list ##
+
 Outputs the list of linked providers.
 
+## provision
 
-## provision ##
+
 Deploys the service to cloud.
 
+## pull-template
 
-## pull-template ##
+
 Downloads service template from the public repository.
 
+## push
 
-## push ##
+
 Builds and pushes the images to the cloud.
 
+Executes the [build](build) command and once the build is complete, pushes the images to the cloud. It is important to note that this command does not deploy the software version. It only makes it available for one click deployment.
 
-## signup ##
+To deploy the cluster refer to [provision](provision) command.
+
+Just like with the [build](build) command, this command should be called from the project root directory.
+
+## signup
+
+
 Signs up new account with Berlioz.
 
+## unprovision
 
-## unprovision ##
+
 Terminates service deployment from the cloud.
-

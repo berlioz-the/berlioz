@@ -1,1 +1,10 @@
 Builds and pushes the images to the cloud.
+
+Executes the ${command:build} command and once the build is complete, pushes the
+images to the cloud. It is important to note that this command does not deploy
+the software version. It only makes it available for one click deployment.
+
+To deploy the cluster refer to ${command:provision} command.
+
+Just like with the ${command:build} command, this command should be called from the
+project root directory.
