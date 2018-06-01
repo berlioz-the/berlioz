@@ -1,10 +1,66 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
-    <title>Security</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Security-16px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M8.00448544,15.0625 C4.37948544,12.9731622 2.56698544,10.6398288 2.56698544,8.0625 C2.56698544,6.77120553 2.41965696,5.01389353 2.125,2.790564 L8.00448544,1.0625 L13.8820255,2.790564 C13.5886655,5.013235 13.4419854,6.770547 13.4419854,8.0625 C13.4419854,10.6398288 11.6294854,12.9731622 8.00448544,15.0625 Z M12.9732354,8.0625 C12.9732354,6.82557453 13.104246,5.18183028 13.3656897,3.1273455 L8.00446357,1.55108371 L2.64154549,3.12732125 C2.90414462,5.18237368 3.03573544,6.82611654 3.03573544,8.0625 C3.03573544,10.3891648 4.66787894,12.5428735 8.00448544,14.519605 C11.3410923,12.542873 12.9732354,10.3891646 12.9732354,8.0625 Z M8.01640321,13.59375 C5.11620909,11.9241452 3.66611202,10.0595619 3.66611202,8 C3.66611202,6.96811737 3.54824135,5.56383679 3.3125,3.78715829 L8.01640321,2.40625 L12.71875,3.78715829 C12.4840463,5.56331056 12.3666944,6.96759113 12.3666944,8 C12.3666944,10.0595619 10.9165973,11.9241452 8.01640321,13.59375 Z" id="Combined-Shape" fill="#689BFF"></path>
-    </g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16px"
+   height="16px"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="security.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Security</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1346"
+     id="namedview12"
+     showgrid="false"
+     inkscape:zoom="14.75"
+     inkscape:cx="8"
+     inkscape:cy="8"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title2">Security</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <defs
+     id="defs6" />
+  <g
+     id="Security-16px"
+     transform="matrix(1.1428571,0,0,1.1428571,-1.1468711,-1.2142854)"
+     style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1">
+    <path
+       d="m 8.0044854,15.0625 c -3.625,-2.089338 -5.4375,-4.422671 -5.4375,-7 C 2.5669854,6.7712055 2.419657,5.0138935 2.125,2.790564 L 8.0044854,1.0625 13.882025,2.790564 c -0.29336,2.222671 -0.44004,3.979983 -0.44004,5.271936 0,2.577329 -1.8125,4.910662 -5.4374996,7 z m 4.9687496,-7 c 0,-1.2369255 0.131011,-2.8806697 0.392455,-4.9351545 L 8.0044636,1.5510837 2.6415455,3.1273213 C 2.9041446,5.1823737 3.0357354,6.8261165 3.0357354,8.0625 c 0,2.326665 1.6321435,4.480374 4.96875,6.457105 C 11.341092,12.542873 12.973235,10.389165 12.973235,8.0625 Z M 8.0164032,13.59375 C 5.1162091,11.924145 3.666112,10.059562 3.666112,8 3.666112,6.9681174 3.5482414,5.5638368 3.3125,3.7871583 L 8.0164032,2.40625 12.71875,3.7871583 C 12.484046,5.5633106 12.366694,6.9675911 12.366694,8 c 0,2.059562 -1.450097,3.924145 -4.3502908,5.59375 z"
+       id="Combined-Shape"
+       inkscape:connector-curvature="0"
+       style="fill:#689bff" />
+  </g>
 </svg>

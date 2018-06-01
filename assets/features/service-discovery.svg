@@ -1,11 +1,72 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
-    <title>Service Discovery</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Discovery" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
-        <path d="M256,478 C133.392786,478 34,378.607214 34,256 C34,211.034105 47.3687037,169.190638 70.3483147,134.227395 C60.3762082,126.161046 54,113.825145 54,100 C54,75.699471 73.699471,56 98,56 C111.624656,56 123.802949,62.1926169 131.873782,71.9167532 M204.420694,40.0230706 C220.972576,36.084831 238.242819,34 256,34 C378.607214,34 478,133.392786 478,256 C478,279.081283 474.477567,301.339858 467.940935,322.267491 C461.420869,343.142089 451.901861,362.692483 439.888291,380.414292 C452.548507,388.140395 461,402.083221 461,418 C461,442.300529 441.300529,462 417,462 C400.986215,462 386.970516,453.445175 379.273723,440.656345 M322.583317,467.834827 C301.549433,474.444321 279.189953,478 256,478 M439.498114,380.987933 C439.628464,380.796933 439.758523,380.605719 439.888291,380.414292 C433.219851,376.344767 425.38375,374 417,374 C392.699471,374 373,393.699471 373,418 C373,426.286744 375.29082,434.038438 379.273723,440.656345 M98,144 C122.300529,144 142,124.300529 142,100 C142,89.3241272 138.197844,79.5362954 131.873782,71.9167532 M70.3483147,134.227395 C77.9042317,140.339309 87.5246158,144 98,144" id="Combined-Shape" stroke="#689BFF" stroke-width="15"></path>
-        <path d="M385.326474,210.680091 C366.617534,157.288584 315.780156,119 256,119 C180.336989,119 119,180.336989 119,256 C119,331.663011 180.336989,393 256,393 C315.074795,393 365.416603,355.609639 384.650838,303.203502" id="Oval-7" stroke="#689BFF" stroke-width="15" transform="translate(252.163237, 256.000000) rotate(-330.000000) translate(-252.163237, -256.000000) "></path>
-    </g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg11"
+   sodipodi:docname="service-discovery.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Service Discovery</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1346"
+     id="namedview13"
+     showgrid="false"
+     inkscape:zoom="20.85965"
+     inkscape:cx="-1.8588329"
+     inkscape:cy="-2.1470125"
+     inkscape:window-x="2549"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg11" />
+  <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title2">Service Discovery</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <defs
+     id="defs6" />
+  <g
+     id="Discovery"
+     transform="matrix(0.03485835,0,0,0.03485834,-0.9237376,-0.92374811)"
+     style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:round">
+    <path
+       d="M 256,478 C 133.39279,478 34,378.60721 34,256 34,211.0341 47.368704,169.19064 70.348315,134.22739 60.376208,126.16105 54,113.82515 54,100 54,75.699471 73.699471,56 98,56 c 13.62466,0 25.80295,6.192617 33.87378,15.916753 M 204.42069,40.023071 C 220.97258,36.084831 238.24282,34 256,34 c 122.60721,0 222,99.39279 222,222 0,23.08128 -3.52243,45.33986 -10.05906,66.26749 -6.52007,20.8746 -16.03908,40.42499 -28.05265,58.1468 C 452.54851,388.14039 461,402.08322 461,418 c 0,24.30053 -19.69947,44 -44,44 -16.01378,0 -30.02948,-8.55483 -37.72628,-21.34366 m -56.6904,27.17849 C 301.54943,474.44432 279.18995,478 256,478 m 183.49811,-97.01207 c 0.13035,-0.191 0.26041,-0.38221 0.39018,-0.57364 C 433.21985,376.34477 425.38375,374 417,374 c -24.30053,0 -44,19.69947 -44,44 0,8.28674 2.29082,16.03844 6.27372,22.65634 M 98,144 c 24.30053,0 44,-19.69947 44,-44 0,-10.675873 -3.80216,-20.463705 -10.12622,-28.083247 M 70.348315,134.22739 C 77.904232,140.33931 87.524616,144 98,144"
+       id="Combined-Shape"
+       inkscape:connector-curvature="0"
+       style="stroke:#689bff;stroke-width:15" />
+    <path
+       d="M 385.32647,210.68009 C 366.61753,157.28858 315.78016,119 256,119 c -75.66301,0 -137,61.33699 -137,137 0,75.66301 61.33699,137 137,137 59.07479,0 109.4166,-37.39036 128.65084,-89.7965"
+       id="Oval-7"
+       transform="rotate(30,252.16324,256)"
+       inkscape:connector-curvature="0"
+       style="stroke:#689bff;stroke-width:15" />
+  </g>
 </svg>

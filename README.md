@@ -3,8 +3,7 @@
 Another very useful capability of **Berlioz** is to deploy the application locally on a workstation as if it is running in an AWS cloud. This will also work even if the application is using cloud native resources and services. This significantly improves development team productivity.
 
 ## Features
-![Cloud Provisioning](assets/features/deploy.svg) **Cloud Provisioning** -
-Describe your container based microservices application in a developer-friendly declarative manner and get it automatically deployed in AWS public cloud.
+![Cloud Provisioning](assets/features/deploy.svg) **Cloud Provisioning** - Describe your container based microservices application in a developer-friendly declarative manner and get it automatically deployed in AWS public cloud.
 
 ![Service Discovery](assets/features/service-discovery.svg) **Service Discovery** - Zero-config discovery is available for all services out of the box. Berlioz does much more than just Load Balancer and DNS.
 
