@@ -1,1 +1,1 @@
-Gets the configured number of running instances for a service.
+Returns configured number of running instances for a service.

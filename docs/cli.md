@@ -24,53 +24,56 @@ cluster_one/
 ## cluster describe
 
 
-Displays cluster definitions.
+Displays cluster definition contents.
 
-Will output cluster, service and other resource definitions of the cluster. Optionally a version can be specified.
+Will output cluster, service and other resource definitions of the cluster. Optionally a version can be specified. Refer to [cluster versions](#cluster-versions) for the version history.
 
 ## cluster list
 
 
-Outputs the list of clusters.
+Outputs the list of cluster definitions.
 
-Those are the clusters published using [push](#push) command.
+Those are the clusters published using [push](#push) command. Please note that the output of this command does not display clusters that are currently deployed. Refer to [deployment cluster list](#deployment-cluster-list) for see deployed clusters.
 
 ## cluster versions
 
 
-Outputs the version history of cluster definitions.
+Outputs cluster definition version history.
 
-The version from the result can be used to downgrade to a particular version using [provision](#provision) command, or alternately to output the definitions using [cluster describe](#cluster-describe) command.
+The version from this command can be used to output definitions of a particular version using [cluster describe](#cluster-describe) command.
 
-## deployment cluster list
-
-
-Outputs the list of deployments.
-
-## deployment cluster versions
+## deployment clusters
 
 
-Outputs the versions of deployment clusters.
+Outputs the list of deployed clusters.
 
 ## deployment create
 
 
-Creates a new deployment.
+Creates a new deployment definition.
+
+After creating the deployment definition you should use [push](#push) command to publish the cluster, and [provision](#provision) command to deploy.
+
+Prior to creating a deployment definition, a cloud provider should be linked using [provider create](#provider-create) command.
 
 ## deployment delete
 
 
-Deletes an existing deployment.
+Deletes an existing deployment definition.
+
+All provisioned clusters for this definition will be undeployed.
 
 ## deployment dns get
 
 
-Gets configured service domain name for the deployment.
+Returns configured service domain name for the deployment.
 
 ## deployment dns set
 
 
 Sets service domain name for the deployment.
+
+Used for service endpoints where dns is turned on.
 
 ## deployment get-configs
 
@@ -80,7 +83,7 @@ Displays dynamic deployment configuration.
 ## deployment list
 
 
-Outputs the list of deployments.
+Outputs the list of deployment definitions.
 
 ## deployment processor logs
 
@@ -90,7 +93,7 @@ Outputs logs of berlioz deployer robot.
 ## deployment scale get
 
 
-Gets the configured number of running instances for a service.
+Returns configured number of running instances for a service.
 
 ## deployment scale set
 
@@ -100,12 +103,19 @@ Sets the number of running instances for a service.
 ## deployment set-config
 
 
-Configures deployment dynamic values.
+Sets up deployment dynamic configuration.
 
 ## deployment status
 
 
-Displays current status of the deployment.
+Displays deployments and their statuses.
+
+## deployment versions
+
+
+Outputs the deployment versions.
+
+The result of this command can be used to downgrade/upgrade to a particular version using [provision](#provision) command.
 
 ## endpoints
 

@@ -1,1 +1,7 @@
-Creates a new deployment.
+Creates a new deployment definition.
+
+After creating the deployment definition you should use ${command:push} command
+to publish the cluster, and ${command:provision} command to deploy.
+
+Prior to creating a deployment definition, a cloud provider should be linked
+using ${command:provider create} command.

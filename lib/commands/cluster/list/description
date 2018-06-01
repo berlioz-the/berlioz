@@ -1,3 +1,6 @@
-Outputs the list of clusters.
+Outputs the list of cluster definitions.
 
 Those are the clusters published using ${command:push} command.
+Please note that the output of this command does not display
+clusters that are currently deployed. Refer to ${command:deployment cluster list}
+for see deployed clusters.

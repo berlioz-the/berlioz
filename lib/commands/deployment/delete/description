@@ -1,1 +1,3 @@
-Deletes an existing deployment.
+Deletes an existing deployment definition.
+
+All provisioned clusters for this definition will be undeployed.
