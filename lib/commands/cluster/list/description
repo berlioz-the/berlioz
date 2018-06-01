@@ -1,1 +1,3 @@
 Outputs the list of clusters.
+
+Those are the clusters published using ${command:push} command.

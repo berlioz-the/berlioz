@@ -1,1 +1,5 @@
-Outputs the version history of cluster defnitions.
+Outputs the version history of cluster definitions.
+
+The version from the result can be used to downgrade to a particular version
+using ${command:provision} command, or alternately to output the definitions using
+${command:cluster describe} command.

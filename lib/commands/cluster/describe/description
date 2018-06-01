@@ -1,1 +1,4 @@
 Displays cluster definitions.
+
+Will output cluster, service and other resource definitions of the cluster.
+Optionally a version can be specified.

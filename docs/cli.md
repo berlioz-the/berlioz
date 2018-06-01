@@ -26,15 +26,21 @@ cluster_one/
 
 Displays cluster definitions.
 
+Will output cluster, service and other resource definitions of the cluster. Optionally a version can be specified.
+
 ## cluster list
 
 
 Outputs the list of clusters.
 
+Those are the clusters published using [push](#push) command.
+
 ## cluster versions
 
 
-Outputs the version history of cluster defnitions.
+Outputs the version history of cluster definitions.
+
+The version from the result can be used to downgrade to a particular version using [provision](#provision) command, or alternately to output the definitions using [cluster describe](#cluster-describe) command.
 
 ## deployment cluster list
 
