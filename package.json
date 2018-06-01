@@ -1,7 +1,7 @@
 {
   "name": "berlioz",
-  "version": "1.0.54",
-  "description": "",
+  "version": "1.0.55",
+  "description": "Microservices deployment service for AWS",
   "main": "index.js",
   "preferGlobal": true,
   "scripts": {
@@ -41,5 +41,26 @@
     "berlioz-debug": "./bin/debug.js"
   },
   "author": "berlioz",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/berlioz-the/berlioz.git#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berlioz-the/berlioz.git"
+  },
+  "keywords": [
+    "berlioz",
+    "berlioz.cloud",
+    "berlioz framework",
+    "microservices",
+    "container",
+    "docker",
+    "aws",
+    "amazon",
+    "cloud",
+    "deployment",
+    "provision",
+    "orchestration",
+    "orchestrator",
+    "container orchestration"
+  ]
 }
