@@ -1,4 +1,4 @@
-Builds Docker images from current project.
+Builds Docker images for current project.
 
 Should be used from the root directory of the project.
 Can be used to build images for one or multiple clusters.

@@ -1,1 +1,4 @@
 Logs in to Berlioz account.
+
+If you don't already have a Berlioz account refer to
+${command:signup} command to create one.

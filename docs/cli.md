@@ -4,7 +4,7 @@
 ## build
 
 
-Builds Docker images from current project.
+Builds Docker images for current project.
 
 Should be used from the root directory of the project. Can be used to build images for one or multiple clusters.
 
@@ -120,7 +120,7 @@ The result of this command can be used to downgrade/upgrade to a particular vers
 ## endpoints
 
 
-Outputs publicly exposed endpoints of the deployment.
+Outputs publicly exposed service endpoints.
 
 ## local account
 
@@ -172,6 +172,8 @@ Starts the service on a local workstation.
 
 Logs in to Berlioz account.
 
+If you don't already have a Berlioz account refer to [signup](#signup) command to create one.
+
 ## logout
 
 
@@ -182,20 +184,45 @@ Logs out from Berlioz account.
 
 Outputs Berlioz definitions in current project.
 
+This command displays the contents of "Berliozfile" files in a tabular format.
+
+Should be used from the root directory of the project.
+
 ## output-diagram
 
 
-Renders Berlioz definition diagram in current project.
+Renders Berlioz definition diagram
+
+This command displays the contents of "Berliozfile" files in a graphical format.
+
+Should be used from the root directory of the project.
+
+Please not that the tool uses PlantUML and GraphViz for rendering. PlantUML is already packaged with Berlioz. For GraphViz installation please refer to https://graphviz.gitlab.io/download/
 
 ## provider create
 
 
-Links cloud provider account.
+Links cloud provider account to Berlioz.
+
+You can link as many AWS accounts as needed. The "kind" argument should be "aws".
+
+Follow these steps to obtain "key" and "secret": 
+ 1. Login to AWS Account https://console.aws.amazon.com/console/home 
+ 2. Navigate to **IAM** (i.e. Identity and Access Management) 
+ 3. Select **Users** Menu. 
+ 4. Select the admin user or create a new one. 
+ 5. Select **Security credentials** tab. 
+ 6. Click **Create access key** button. 
+ 7. Save **Access key ID** and **Secret access key** values. You may need to click the **Show** link to fully reveal the secret key. 
+ 8. Once you provide the access and secret keys to berlioz command line make sure you discard the keys. 
+
 
 ## provider delete
 
 
 Unlinks cloud provider account.
+
+Any provisioned deployments will not be undeployed.
 
 ## provider list
 
@@ -205,7 +232,15 @@ Outputs the list of linked providers.
 ## provision
 
 
-Deploys the service to cloud.
+Provisions the services to the cloud.
+
+The name of the deployment definition should be specified.
+
+Optionally a cluster and region can be specified to limit the deployment scope, otherwise all clusters would be deployed to all regions included in the deployment definition. Please note that the changes will be made to the specified deployment only. Any other deployment definition will be unchanged.
+
+The command will preview the changes to be made and trigger deployment process. To monitor the process refer to [deployment status](#deployment-status) command.
+
+Also, once the deployment is fully provisioned you can access the public endpoints using [endpoints](#endpoints) command.
 
 ## pull-template
 
@@ -232,3 +267,9 @@ Signs up new account with Berlioz.
 
 
 Terminates service deployment from the cloud.
+
+The name of the deployment definition should be specified.
+
+Optionally a cluster and region can be specified to limit the deployment scope, otherwise all clusters across all regions will undeployed. Please note that the changes will be made to the specified deployment only. Any other deployment definition will be unchanged.
+
+The command will preview the changes to be made and trigger deployment process. To monitor the process refer to [deployment status](#deployment-status) command.

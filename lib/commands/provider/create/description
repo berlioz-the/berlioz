@@ -1,1 +1,13 @@
-Links cloud provider account.
+Links cloud provider account to Berlioz.
+
+You can link as many AWS accounts as needed. The "kind" argument should be "aws".
+
+Follow these steps to obtain "key" and "secret": <br/>
+1. Login to AWS Account https://console.aws.amazon.com/console/home <br/>
+2. Navigate to **IAM** (i.e. Identity and Access Management) <br/>
+3. Select **Users** Menu. <br/>
+4. Select the admin user or create a new one. <br/>
+5. Select **Security credentials** tab. <br/>
+6. Click **Create access key** button. <br/>
+7. Save **Access key ID** and **Secret access key** values. You may need to click the **Show** link to fully reveal the secret key. <br/>
+8. Once you provide the access and secret keys to berlioz command line make sure you discard the keys. <br/>

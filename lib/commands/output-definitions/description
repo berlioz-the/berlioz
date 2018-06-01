@@ -1,1 +1,5 @@
 Outputs Berlioz definitions in current project.
+
+This command displays the contents of "Berliozfile" files in a tabular format.
+
+Should be used from the root directory of the project.

@@ -1,1 +1,3 @@
 Unlinks cloud provider account.
+
+Any provisioned deployments will not be undeployed.

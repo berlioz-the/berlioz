@@ -1,1 +1,9 @@
-Renders Berlioz definition diagram in current project.
+Renders Berlioz definition diagram
+
+This command displays the contents of "Berliozfile" files in a graphical format.
+
+Should be used from the root directory of the project.
+
+Please not that the tool uses PlantUML and GraphViz for rendering.
+PlantUML is already packaged with Berlioz. For GraphViz installation
+please refer to https://graphviz.gitlab.io/download/
