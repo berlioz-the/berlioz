@@ -1,4 +1,4 @@
-# Berlioz Command Line Interface
+# Command Line Interface
 
 
 ## build

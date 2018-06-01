@@ -1,4 +1,4 @@
-# Berlioz Definition Language
+# Language
 Berlioz entities are defined as a part of the application code base.
 Every entity defined should be in a separate directory and defined in a file
 called **Berliozfile** in YAML format.
