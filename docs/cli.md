@@ -127,45 +127,59 @@ Outputs publicly exposed service endpoints.
 
 Setup AWS account profile name for local deployment native resources.
 
+Berlioz allows use of cloud native resources like DynamoDB and Kinesis. In order to have access to such services even when deploying on a local workstation, we need an access to some AWS account to configure those resources. Specify AWS profile to use for that purpose. Note, that this account does not have to be the one used in other deployments.
+
 ## local endpoints
 
 
-Outputs publicly exposed endpoints of the deployment.
+Outputs publicly exposed endpoints for local deployment
 
 ## local get-configs
 
 
-Displays current configuration.
+Displays dynamic local deployment configuration.
 
 ## local provision
 
 
-Starts the service on a local workstation.
+Provisions services on a local workstation.
+
+This command provisions locally published clusters on a local workstation.
+
+Optionally, a single cluster can be specified to provision a single cluster only.
 
 ## local push
 
 
-Builds and pushes the images to local deployment store.
+Builds and pushes the images to local workstation store.
+
+Executes the [build](#build) command and once the build is complete, pushes the images to the local workstation store. It is important to note that this command does not deploy the cluster locally yet. To deploy the cluster use the [local provision](#local-provision) command.
+
+Just like with the [build](#build) command, this command should be called from the project root directory.
 
 ## local push-provision
 
 
-Builds and pushes the images to local deployment store.
+Builds and provisions the services on a local workstation
+
+This command should be called from the project root directory. This command literally combines [build](#build), [local push](#local-push) and [local provision](#local-provision) commands.
 
 ## local scale get
 
 
-Specifies number of service instances to deploy on a local workstation.
+Returns configured number of service instances to deploy on a local workstation.
 
 ## local scale set
 
 
-Specifies number of service instances to deploy on a local workstation.
+Sets the number of running instances for a service on a local workstation.
 
 ## local unprovision
 
 
-Starts the service on a local workstation.
+Terminates services on a local workstation.
+
+Optionally, a single cluster can be specified to undeploy a single cluster only.
 
 ## login
 
@@ -241,11 +255,6 @@ Optionally a cluster and region can be specified to limit the deployment scope, 
 The command will preview the changes to be made and trigger deployment process. To monitor the process refer to [deployment status](#deployment-status) command.
 
 Also, once the deployment is fully provisioned you can access the public endpoints using [endpoints](#endpoints) command.
-
-## pull-template
-
-
-Downloads service template from the public repository.
 
 ## push
 

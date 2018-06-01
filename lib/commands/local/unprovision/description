@@ -1,1 +1,3 @@
-Starts the service on a local workstation.
+Terminates services on a local workstation.
+
+Optionally, a single cluster can be specified to undeploy a single cluster only.
