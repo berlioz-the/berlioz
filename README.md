@@ -69,3 +69,9 @@ $ berlioz endpoints --deployment prod
 
 This was the most trivial application example we could come up with. For more
 sample uses and scenarios checkout the complete samples repository [here](https://github.com/berlioz-the/samples).
+
+## Documentation
+Complete documentation reference:
+* [Language](docs/language.md) - declarative YAML to define services and interactions.
+* [Command Line Interface](docs/cli.md) - toolkit to build and deploy applications.
+* [Connectors](docs/connectors.md) - client library to enable service-discovery.
