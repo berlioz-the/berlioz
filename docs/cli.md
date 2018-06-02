@@ -63,18 +63,6 @@ Deletes an existing deployment definition.
 
 All provisioned clusters for this definition will be undeployed.
 
-## deployment dns get
-
-
-Returns configured service domain name for the deployment.
-
-## deployment dns set
-
-
-Sets service domain name for the deployment.
-
-Used for service endpoints where dns is turned on.
-
 ## deployment get-configs
 
 
@@ -89,16 +77,6 @@ Outputs the list of deployment definitions.
 
 
 Outputs logs of berlioz deployer robot.
-
-## deployment scale get
-
-
-Returns configured number of running instances for a service.
-
-## deployment scale set
-
-
-Sets the number of running instances for a service.
 
 ## deployment set-config
 
@@ -116,6 +94,18 @@ Displays deployments and their statuses.
 Outputs the deployment versions.
 
 The result of this command can be used to downgrade/upgrade to a particular version using [provision](#provision) command.
+
+## dns get
+
+
+Returns configured service domain name for the deployment.
+
+## dns set
+
+
+Sets service domain name for the deployment.
+
+Used for service endpoints where dns is turned on.
 
 ## endpoints
 
@@ -266,6 +256,16 @@ Executes the [build](#build) command and once the build is complete, pushes the 
 To deploy the cluster refer to [provision](#provision) command.
 
 Just like with the [build](#build) command, this command should be called from the project root directory.
+
+## scale get
+
+
+Returns configured number of running instances for a service.
+
+## scale set
+
+
+Sets the number of running instances for a service.
 
 ## signup
 
