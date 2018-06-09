@@ -1,0 +1,82 @@
+@startuml
+
+skinparam handwritten true
+
+cloud "AWS-Client" #08B2E3 {
+
+    node "Instance" as Instance2 #B7BFC9 {
+
+        rectangle "Berlioz Agent" as BerliozAgent2 #F77F00 {
+            card "Web Socket" as BerliozAgent2WS #EE6352  {
+
+            }
+        }
+
+        rectangle ServiceA1 #57A773 {
+            card "Connector" as ServiceA1Connector #FCBF49  {
+
+            }
+        }
+
+        rectangle ServiceB1 #57A773 {
+            card "Connector" as ServiceB1Connector #FCBF49  {
+
+            }
+        }
+
+        BerliozAgent2WS <.. ServiceA1Connector
+        BerliozAgent2WS <.. ServiceB1Connector
+    }
+
+    node "Instance" as Instance1 #B7BFC9 {
+
+        rectangle "Berlioz Agent" as BerliozAgent1 #F77F00 {
+            card "Web Socket" as BerliozAgent1WS #EE6352  {
+
+            }
+        }
+
+        rectangle ServiceA2 #57A773 {
+            card "Connector" as ServiceA2Connector #FCBF49  {
+
+            }
+        }
+
+        rectangle ServiceA3 #57A773 {
+            card "Connector" as ServiceA3Connector #FCBF49  {
+
+            }
+        }
+
+        rectangle ServiceB2 #57A773 {
+            card "Connector" as ServiceB2Connector #FCBF49  {
+
+            }
+        }
+
+        BerliozAgent1WS <.. ServiceA2Connector
+        BerliozAgent1WS <.. ServiceA3Connector
+        BerliozAgent1WS <.. ServiceB2Connector
+    }
+
+
+    storage "AWS-SQS" as SQS1 #D3C4D1 {
+    }
+    SQS1 --> BerliozAgent1
+
+    storage "AWS-SQS" as SQS2 #D3C4D1 {
+    }
+    SQS2 --> BerliozAgent2
+
+}
+
+cloud "AWS-Berlioz" #08B2E3 {
+    rectangle "Berlioz Robot" as BerliozRobot #EE6352 {
+
+    }
+}
+
+BerliozRobot --> SQS1
+BerliozRobot --> SQS2
+
+@enduml

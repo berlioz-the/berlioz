@@ -1,6 +1,6 @@
 {
   "name": "berlioz",
-  "version": "1.0.66",
+  "version": "1.0.67",
   "description": "Microservices deployment service for AWS",
   "main": "index.js",
   "preferGlobal": true,
@@ -33,6 +33,7 @@
     "the-promise": "^1.0.28",
     "tmp": "0.0.33",
     "vorpal": "^1.12.0",
+    "wildcard": "^1.1.2",
     "wordwrap": "^1.0.0",
     "yamljs": "^0.3.0"
   },
