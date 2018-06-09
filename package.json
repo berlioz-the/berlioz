@@ -1,6 +1,6 @@
 {
   "name": "berlioz",
-  "version": "1.0.67",
+  "version": "1.0.68",
   "description": "Microservices deployment service for AWS",
   "main": "index.js",
   "preferGlobal": true,
