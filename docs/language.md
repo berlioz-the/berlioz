@@ -1,3 +1,5 @@
+[![Analytics](https://ga-beacon.appspot.com/UA-120606268-2/github/berlioz/docs/language)](https://github.com/igrigorik/ga-beacon)
+
 # Language
 Berlioz entities are defined as a part of the application code base.
 Every entity defined should be in a separate directory and defined in a file

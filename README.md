@@ -2,6 +2,7 @@
 [![License](https://img.shields.io/github/license/berlioz-the/berlioz.svg)](https://github.com/berlioz-the/berlioz/LICENSE.md)
 [![GitHub last commit](https://img.shields.io/github/last-commit/berlioz-the/berlioz.svg)](https://github.com/berlioz-the/berlioz/commits/master)
 [![Slack](https://img.shields.io/badge/slack-join-6073A0.svg)](https://slack.berlioz.cloud)
+[![Analytics](https://ga-beacon.appspot.com/UA-120606268-2/github/berlioz)](https://github.com/igrigorik/ga-beacon)
 
 [**Berlioz**](https://berlioz.cloud) is a service that delivers microservices applications to AWS public cloud. Application components are defined in YAML using high level abstractions. This enables teams to work independently and focus on  business problems rather than cloud logistics. **Berlioz** will also configure AWS native services like DynamoDB, Kinesis, etc.
 

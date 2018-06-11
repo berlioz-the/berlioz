@@ -1,3 +1,5 @@
+[![Analytics](https://ga-beacon.appspot.com/UA-120606268-2/github/berlioz/docs/aws-account)](https://github.com/igrigorik/ga-beacon)
+
 # Setting up AWS Account
 1. Login to AWS Account [https://console.aws.amazon.com/console/home](https://console.aws.amazon.com/console/home)
 2. Navigate to **IAM** (i.e. Identity and Access Management)

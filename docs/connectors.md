@@ -1,3 +1,5 @@
+[![Analytics](https://ga-beacon.appspot.com/UA-120606268-2/github/berlioz/connectors)](https://github.com/igrigorik/ga-beacon)
+
 # Connectors
 
 ## Purpose
