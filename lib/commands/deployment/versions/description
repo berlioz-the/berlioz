@@ -1,4 +1,4 @@
 Outputs the deployment versions.
 
 The result of this command can be used to downgrade/upgrade to
-a particular version using ${command:provision} command.
+a particular version using ${command:run} command.

@@ -1,4 +1,4 @@
-Provisions the services to the cloud.
+Run the cluster on the cloud.
 
 The name of the deployment definition should be specified.
 
@@ -8,7 +8,7 @@ definition. Please note that the changes will be made to the specified deploymen
 only. Any other deployment definition will be unchanged.
 
 The command will preview the changes to be made and trigger deployment process.
-To monitor the process refer to ${command:deployment status} command.
+To monitor the process refer to ${command:status} command.
 
-Also, once the deployment is fully provisioned you can access the public endpoints
+Also, once the deployment is fully up and running you can access the public endpoints
 using ${command:endpoints} command.

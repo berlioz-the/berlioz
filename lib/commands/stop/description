@@ -8,4 +8,4 @@ Please note that the changes will be made to the specified deployment only.
 Any other deployment definition will be unchanged.
 
 The command will preview the changes to be made and trigger deployment process.
-To monitor the process refer to ${command:deployment status} command.
+To monitor the process refer to ${command:status} command.

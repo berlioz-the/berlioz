@@ -1,5 +1,0 @@
-Provisions services on a local workstation.
-
-This command provisions locally published clusters on a local workstation.
-
-Optionally, a single cluster can be specified to provision a single cluster only.

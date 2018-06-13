@@ -3,7 +3,7 @@ Builds and pushes the images to local workstation store.
 Executes the ${command:build} command and once the build is complete, pushes the
 images to the local workstation store.
 It is important to note that this command does not deploy the cluster locally yet.
-To deploy the cluster use the ${command:local provision} command.
+To deploy the cluster use the ${command:local run} command.
 
 Just like with the ${command:build} command, this command should be called from the
 project root directory.

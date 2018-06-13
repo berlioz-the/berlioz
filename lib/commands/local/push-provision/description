@@ -1,5 +1,0 @@
-Builds and provisions the services on a local workstation
-
-This command should be called from the project root directory. This command
-literally combines ${command:build}, ${command:local push} and ${command:local provision}
-commands.

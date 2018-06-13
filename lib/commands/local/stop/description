@@ -1,0 +1,3 @@
+Terminates running clusters on a local workstation.
+
+Optionally, a single cluster can be specified to terminate a specified cluster only.

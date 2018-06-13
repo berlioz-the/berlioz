@@ -54,7 +54,7 @@ Outputs the list of deployed clusters.
 
 Creates a new deployment definition.
 
-After creating the deployment definition you should use [push](#push) command to publish the cluster, and [provision](#provision) command to deploy.
+After creating the deployment definition you should use [push](#push) command to publish the cluster, and [run](#run) command to deploy.
 
 Prior to creating a deployment definition, a cloud provider should be linked using [provider create](#provider-create) command.
 
@@ -63,7 +63,7 @@ Prior to creating a deployment definition, a cloud provider should be linked usi
 
 Deletes an existing deployment definition.
 
-All provisioned clusters for this definition will be undeployed.
+All running clusters for this definition will be undeployed.
 
 ## deployment get-configs
 
@@ -85,17 +85,12 @@ Outputs logs of berlioz deployer robot.
 
 Sets up deployment dynamic configuration.
 
-## deployment status
-
-
-Displays deployments and their statuses.
-
 ## deployment versions
 
 
 Outputs the deployment versions.
 
-The result of this command can be used to downgrade/upgrade to a particular version using [provision](#provision) command.
+The result of this command can be used to downgrade/upgrade to a particular version using [run](#run) command.
 
 ## dns get
 
@@ -131,30 +126,30 @@ Outputs publicly exposed endpoints for local deployment
 
 Displays dynamic local deployment configuration.
 
-## local provision
-
-
-Provisions services on a local workstation.
-
-This command provisions locally published clusters on a local workstation.
-
-Optionally, a single cluster can be specified to provision a single cluster only.
-
 ## local push
 
 
 Builds and pushes the images to local workstation store.
 
-Executes the [build](#build) command and once the build is complete, pushes the images to the local workstation store. It is important to note that this command does not deploy the cluster locally yet. To deploy the cluster use the [local provision](#local-provision) command.
+Executes the [build](#build) command and once the build is complete, pushes the images to the local workstation store. It is important to note that this command does not deploy the cluster locally yet. To deploy the cluster use the [local run](#local-run) command.
 
 Just like with the [build](#build) command, this command should be called from the project root directory.
 
-## local push-provision
+## local push-run
 
 
-Builds and provisions the services on a local workstation
+Builds and runs the services on a local workstation
 
-This command should be called from the project root directory. This command literally combines [build](#build), [local push](#local-push) and [local provision](#local-provision) commands.
+This command should be called from the project root directory. This command literally combines [build](#build), [local push](#local-push) and [local run](#local-run) commands.
+
+## local run
+
+
+Run the cluster on a local workstation.
+
+This command runs locally published clusters on a local workstation.
+
+Optionally, a single cluster can be specified to run specified cluster only.
 
 ## local scale get
 
@@ -166,12 +161,12 @@ Returns configured number of service instances to deploy on a local workstation.
 
 Sets the number of running instances for a service on a local workstation.
 
-## local unprovision
+## local stop
 
 
-Terminates services on a local workstation.
+Terminates running clusters on a local workstation.
 
-Optionally, a single cluster can be specified to undeploy a single cluster only.
+Optionally, a single cluster can be specified to terminate a specified cluster only.
 
 ## login
 
@@ -228,25 +223,12 @@ Follow these steps to obtain "key" and "secret":
 
 Unlinks cloud provider account.
 
-Any provisioned deployments will not be undeployed.
+Any running deployments will not be terminated.
 
 ## provider list
 
 
 Outputs the list of linked providers.
-
-## provision
-
-
-Provisions the services to the cloud.
-
-The name of the deployment definition should be specified.
-
-Optionally a cluster and region can be specified to limit the deployment scope, otherwise all clusters would be deployed to all regions included in the deployment definition. Please note that the changes will be made to the specified deployment only. Any other deployment definition will be unchanged.
-
-The command will preview the changes to be made and trigger deployment process. To monitor the process refer to [deployment status](#deployment-status) command.
-
-Also, once the deployment is fully provisioned you can access the public endpoints using [endpoints](#endpoints) command.
 
 ## push
 
@@ -255,9 +237,22 @@ Builds and pushes the images to the cloud.
 
 Executes the [build](#build) command and once the build is complete, pushes the images to the cloud. It is important to note that this command does not deploy the software version. It only makes it available for one click deployment.
 
-To deploy the cluster refer to [provision](#provision) command.
+To deploy the cluster refer to [run](#run) command.
 
 Just like with the [build](#build) command, this command should be called from the project root directory.
+
+## run
+
+
+Run the cluster on the cloud.
+
+The name of the deployment definition should be specified.
+
+Optionally a cluster and region can be specified to limit the deployment scope, otherwise all clusters would be deployed to all regions included in the deployment definition. Please note that the changes will be made to the specified deployment only. Any other deployment definition will be unchanged.
+
+The command will preview the changes to be made and trigger deployment process. To monitor the process refer to [status](#status) command.
+
+Also, once the deployment is fully up and running you can access the public endpoints using [endpoints](#endpoints) command.
 
 ## scale get
 
@@ -274,7 +269,12 @@ Sets the number of running instances for a service.
 
 Signs up new account with Berlioz.
 
-## unprovision
+## status
+
+
+Displays deployments and their statuses.
+
+## stop
 
 
 Terminates service deployment from the cloud.
@@ -283,4 +283,4 @@ The name of the deployment definition should be specified.
 
 Optionally a cluster and region can be specified to limit the deployment scope, otherwise all clusters across all regions will undeployed. Please note that the changes will be made to the specified deployment only. Any other deployment definition will be unchanged.
 
-The command will preview the changes to be made and trigger deployment process. To monitor the process refer to [deployment status](#deployment-status) command.
+The command will preview the changes to be made and trigger deployment process. To monitor the process refer to [status](#status) command.

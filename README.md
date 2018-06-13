@@ -35,7 +35,7 @@ Follow steps below to:
 $ npm install berlioz -g
 $ git clone https://github.com/berlioz-the/samples.git
 $ cd samples/01.HelloWorld/v1.basic
-$ berlioz local push-provision
+$ berlioz local push-run
 ```
 
 Now lets deploy the same application to AWS. The steps below will:
@@ -53,22 +53,22 @@ $ berlioz signup
 $ berlioz provider create --name myaws --kind aws --key <key> --secret <secret>
 $ berlioz deployment create --name prod --provider myaws --region us-east-1
 $ berlioz push
-$ berlioz provision --deployment prod
+$ berlioz run --deployment prod
 $ berlioz deployment status
 $ berlioz endpoints --deployment prod
 ```
 
 With the single web application up and running we can make some code changes
 to add the second service and let them communicate. Just like before we will
-provision the application on a local workstation:
+run the application on a local workstation:
 ```
 $ cd ../v2.second-service
-$ berlioz local push-provision
+$ berlioz local push-run
 ```
 and then, to the cloud:
 ```
 $ berlioz push
-$ berlioz provision --deployment prod
+$ berlioz run --deployment prod
 $ berlioz deployment status
 $ berlioz endpoints --deployment prod
 ```

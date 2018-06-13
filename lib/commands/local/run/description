@@ -1,0 +1,5 @@
+Run the cluster on a local workstation.
+
+This command runs locally published clusters on a local workstation.
+
+Optionally, a single cluster can be specified to run specified cluster only.
