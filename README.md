@@ -54,7 +54,7 @@ $ berlioz provider create --name myaws --kind aws --key <key> --secret <secret>
 $ berlioz deployment create --name prod --provider myaws --region us-east-1
 $ berlioz push
 $ berlioz run --deployment prod
-$ berlioz deployment status
+$ berlioz status
 $ berlioz endpoints --deployment prod
 ```
 
@@ -69,7 +69,7 @@ and then, to the cloud:
 ```
 $ berlioz push
 $ berlioz run --deployment prod
-$ berlioz deployment status
+$ berlioz status
 $ berlioz endpoints --deployment prod
 ```
 
