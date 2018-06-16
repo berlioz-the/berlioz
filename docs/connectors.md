@@ -245,14 +245,11 @@ kinesis.putRecord(params)
 ### NodeJS Connector
 * [NodeJS Connector](https://github.com/berlioz-the/connector-nodejs) - official NodeJS connector.
 
+### Go Connector
+* coming soon
+
 ### Python Connector
 * coming soon
 
 ## Developing New Connector
-If the connector is not available in a particular language, its a pretty trivial task to implement in a language of your choice. There are few things that it has to do:
-1. Connect to **Berlioz Agent** using web socket client and listen to changes. The **BERLIOZ_AGENT_PATH** environment variable specifies the web socket address.
-2. Record changes received from the web socket in dictionaries.
-3. Provide APIs from [here](#using-the-connector)
-4. For tracing purposes report API usage activity to Zipkin server specified by **BERLIOZ_ZIPKIN_PATH** environment variable.
-
-For references please check the [nodejs-connector](https://www.npmjs.com/package/berlioz-connector)
+If the connector is not available in a particular language, its a pretty trivial task to implement in a language of your choice. Refer to connector development guide [here](developing-connectors.md).
