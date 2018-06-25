@@ -1,6 +1,6 @@
 {
   "name": "berlioz",
-  "version": "1.0.82",
+  "version": "1.0.83",
   "description": "Microservices deployment service for AWS",
   "main": "index.js",
   "preferGlobal": true,
@@ -10,7 +10,7 @@
   "dependencies": {
     "aws-arn-parser": "^1.0.0",
     "aws-sdk": "2.235.1",
-    "aws-sdk-wrapper": "^1.0.136",
+    "aws-sdk-wrapper": "^1.0.137",
     "awscred": "^1.4.1",
     "child-process-promise": "^2.2.1",
     "chrome-launcher": "^0.10.2",
@@ -25,7 +25,7 @@
     "recursive-copy": "^2.0.9",
     "request": "^2.87.0",
     "request-promise": "^4.2.2",
-    "shelljs": "^0.8.2",
+    "rubenhak-shelljs": "^0.8.3",
     "string-builder": "^0.1.4",
     "stringbuilder": "0.0.11",
     "the-lodash": "^1.0.3",
