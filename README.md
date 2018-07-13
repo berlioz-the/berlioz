@@ -28,10 +28,10 @@ Another very useful capability of **Berlioz** is to deploy the application local
 
 ## Getting Started
 Follow steps below to:
-0. Prepare your workstation following [this guide](docs/environments)
-1. Install berlioz command line tool
-2. Download sample projects
-3. Deploy HelloWorld web application to local workstation
+1. Prepare your workstation following [this guide](docs/environments)
+2. Install berlioz command line tool
+3. Download sample projects
+4. Deploy HelloWorld web application to local workstation
 
 ```
 $ npm install berlioz -g
