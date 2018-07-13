@@ -1,3 +1,4 @@
+
 [![Release](https://img.shields.io/github/release/berlioz-the/berlioz.svg)](https://github.com/berlioz-the/berlioz/releases/latest)
 [![License](https://img.shields.io/github/license/berlioz-the/berlioz.svg)](https://github.com/berlioz-the/berlioz/LICENSE.md)
 [![GitHub last commit](https://img.shields.io/github/last-commit/berlioz-the/berlioz.svg)](https://github.com/berlioz-the/berlioz/commits/master)
@@ -27,6 +28,7 @@ Another very useful capability of **Berlioz** is to deploy the application local
 
 ## Getting Started
 Follow steps below to:
+0. Prepare your workstation following [this guide](docs/environments)
 1. Install berlioz command line tool
 2. Download sample projects
 3. Deploy HelloWorld web application to local workstation
