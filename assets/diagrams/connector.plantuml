@@ -13,19 +13,19 @@ cloud "AWS-Client" #08B2E3 {
         }
 
         rectangle ServiceA1 #57A773 {
-            card "Connector" as ServiceA1Connector #FCBF49  {
+            card "SDK" as ServiceA1Connector #FCBF49  {
 
             }
         }
 
         rectangle ServiceB1 #57A773 {
-            card "Connector" as ServiceB1Connector #FCBF49  {
+            card "SDK" as ServiceB1Connector #FCBF49  {
 
             }
         }
 
-        BerliozAgent2WS <.. ServiceA1Connector
-        BerliozAgent2WS <.. ServiceB1Connector
+        BerliozAgent2WS ..> ServiceA1Connector #2b04f0
+        BerliozAgent2WS ..> ServiceB1Connector #2b04f0
     }
 
     node "Instance" as Instance1 #B7BFC9 {
@@ -37,36 +37,37 @@ cloud "AWS-Client" #08B2E3 {
         }
 
         rectangle ServiceA2 #57A773 {
-            card "Connector" as ServiceA2Connector #FCBF49  {
+            card "SDK" as ServiceA2Connector #FCBF49  {
 
             }
         }
 
         rectangle ServiceA3 #57A773 {
-            card "Connector" as ServiceA3Connector #FCBF49  {
+            card "SDK" as ServiceA3Connector #FCBF49  {
 
             }
+
         }
 
         rectangle ServiceB2 #57A773 {
-            card "Connector" as ServiceB2Connector #FCBF49  {
+            card "SDK" as ServiceB2Connector #FCBF49  {
 
             }
         }
 
-        BerliozAgent1WS <.. ServiceA2Connector
-        BerliozAgent1WS <.. ServiceA3Connector
-        BerliozAgent1WS <.. ServiceB2Connector
+        BerliozAgent1WS ..> ServiceA2Connector #2b04f0
+        BerliozAgent1WS ..> ServiceA3Connector #2b04f0
+        BerliozAgent1WS ..> ServiceB2Connector #2b04f0
     }
 
 
     storage "AWS-SQS" as SQS1 #D3C4D1 {
     }
-    SQS1 --> BerliozAgent1
+    SQS1 ..> BerliozAgent1 #2b04f0
 
     storage "AWS-SQS" as SQS2 #D3C4D1 {
     }
-    SQS2 --> BerliozAgent2
+    SQS2 ..> BerliozAgent2 #2b04f0
 
 }
 
@@ -76,7 +77,16 @@ cloud "AWS-Berlioz" #08B2E3 {
     }
 }
 
-BerliozRobot --> SQS1
-BerliozRobot --> SQS2
+BerliozRobot ..> SQS1 #2b04f0
+BerliozRobot ..> SQS2 #2b04f0
+
+/'cloud "Legend" #08B2E3 {
+rectangle A {
+}
+rectangle B {
+}
+A .> B #2b04f0 : policy flow
+A -> B #red : data flow
+}'/
 
 @enduml
