@@ -116,6 +116,13 @@ Setup AWS account profile name for local deployment native resources.
 
 Berlioz allows use of cloud native resources like DynamoDB and Kinesis. In order to have access to such services even when deploying on a local workstation, we need an access to some AWS account to configure those resources. Specify AWS profile to use for that purpose. Note, that this account does not have to be the one used in other deployments.
 
+## local build-run
+
+
+Builds and runs the services on a local workstation
+
+This command should be called from the project root directory. This command literally combines [build](#build), [local push](#local-push) and [local run](#local-run) commands.
+
 ## local endpoints
 
 
