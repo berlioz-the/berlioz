@@ -104,10 +104,15 @@ Sets service domain name for the deployment.
 
 Used for service endpoints where dns is turned on.
 
+## endpoint
+
+
+Outputs publicly exposed service endpoint.
+
 ## endpoints
 
 
-Outputs publicly exposed service endpoints.
+Outputs publicly exposed service endpoints in a tabular format.
 
 ## local account
 
@@ -291,3 +296,8 @@ The name of the deployment definition should be specified.
 Optionally a cluster and region can be specified to limit the deployment scope, otherwise all clusters across all regions will undeployed. Please note that the changes will be made to the specified deployment only. Any other deployment definition will be unchanged.
 
 The command will preview the changes to be made and trigger deployment process. To monitor the process refer to [status](#status) command.
+
+## wait
+
+
+Waits for deployment status to be completed.
