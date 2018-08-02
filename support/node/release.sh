@@ -26,13 +26,9 @@ fi
 
 # docker login
 
-cd $MY_DIR/golang/1.10
-docker build . -t berlioz-golang-1.10
-docker tag berlioz-golang-1.10 berliozcloud/golang-1.10
-docker push berliozcloud/golang-1.10
-
-$MY_DIR/node/release.sh
-
-$MY_DIR/circleci/release.sh
+cd $MY_DIR/9
+docker build . -t berlioz-node-9
+docker tag berlioz-node-9 berliozcloud/node-9
+docker push berliozcloud/node-9
 
 # docker logout

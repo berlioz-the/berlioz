@@ -1,5 +1,6 @@
 FROM node:9-alpine
 
-RUN npm install berlioz -g
+RUN mkdir /app
+WORKDIR /app
 
 CMD ["node", "."]
