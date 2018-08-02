@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# Script to install Berioz and its prerequisites
+#
+# Run as root or insert `sudo -E` before `bash`:
+#
+# curl -sL https://github.com/berlioz-the/berlioz/blob/support/setup | bash -
+#   or
+# wget -qO- https://github.com/berlioz-the/berlioz/blob/support/setup | bash -
+
+print_title() {
+    echo
+    echo "## $1"
+    echo
+}
+print_info() {
+    echo "# $1"
+}
+bail() {
+    echo 'Error executing command, exiting'
+    exit 1
+}
+exec_cmd_nobail() {
+    echo "+ $1"
+    bash -c "$1"
+}
+exec_cmd() {
+    exec_cmd_nobail "$1" || bail
+}
+
+exec_cmd 'curl -sL https://deb.nodesource.com/setup_6.x | bash -'
+
+print_title "Installing NodeJS..."
+exec_cmd 'apt-get install -y nodejs'
+
+print_info "NodeJS Version: $(node --version)"
+print_info "NPM Version: $(npm -v)"
+
+print_title "Installing Berlioz CLI..."
+exec_cmd 'npm install -g berlioz'
