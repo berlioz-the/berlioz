@@ -4,9 +4,9 @@
 #
 # Run as root or insert `sudo -E` before `bash`:
 #
-# curl -sL https://github.com/berlioz-the/berlioz/blob/support/setup | bash -
+# curl -sL https://raw.githubusercontent.com/berlioz-the/berlioz/master/support/setup | bash -
 #   or
-# wget -qO- https://github.com/berlioz-the/berlioz/blob/support/setup | bash -
+# wget -qO- https://raw.githubusercontent.com/berlioz-the/berlioz/master/support/setup | bash -
 
 print_title() {
     echo
