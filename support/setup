@@ -37,4 +37,4 @@ print_info "NodeJS Version: $(node --version)"
 print_info "NPM Version: $(npm -v)"
 
 print_title "Installing Berlioz CLI..."
-exec_cmd 'npm install -g berlioz'
+exec_cmd 'npm install --unsafe-perm berlioz -g'

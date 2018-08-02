@@ -24,18 +24,7 @@ if [[ "$(uname -s)" == CYGWIN* ]]; then
     echo "My Dir: $MY_DIR"
 fi
 
-# docker login
-
-cd $MY_DIR/golang/1.10
-docker build . -t berlioz-golang-1.10
-docker tag berlioz-golang-1.10 berliozcloud/golang-1.10
-docker push berliozcloud/golang-1.10
-
-cd $MY_DIR/node/9
-docker build . -t berlioz-node-9
-docker tag berlioz-node-9 berliozcloud/node-9
-docker push berliozcloud/node-9
-
-$MY_DIR/circleci/release.sh
-
-# docker logout
+cd $MY_DIR/berlioz-cli
+docker build . -t berlioz-circleci-cli
+docker tag berlioz-circleci-cli berliozcloud/circleci-cli
+docker push berliozcloud/circleci-cli
