@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const logger = require('the-logger').setup('bunyan', 'berlioz', {
+const logger = require('the-logger').setup('berlioz', {
     enableFile: false,
     cleanOnStart: false,
     pretty: true
