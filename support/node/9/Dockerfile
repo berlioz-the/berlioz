@@ -1,7 +1,5 @@
 FROM node:9-alpine
 
-RUN npm install aws-sdk -g
-
 RUN mkdir /app
 WORKDIR /app
 

@@ -24,8 +24,8 @@ if [[ "$(uname -s)" == CYGWIN* ]]; then
     echo "My Dir: $MY_DIR"
 fi
 
-$MY_DIR/8/release.sh
+cd $MY_DIR
 
-$MY_DIR/9/release.sh
-
-$MY_DIR/10/release.sh
+docker build --no-cache -t berlioz-node-9 .
+docker tag berlioz-node-9 berliozcloud/node-9
+docker push berliozcloud/node-9
