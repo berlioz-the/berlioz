@@ -1,0 +1,11 @@
+---
+kind: cluster
+name: fundme
+
+provides:
+    api:
+        service: api
+        public: true
+    frontend:
+        service: frontend
+        public: true

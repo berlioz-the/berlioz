@@ -1,0 +1,10 @@
+---
+kind: database
+cluster: fundme
+name: donations
+class: nosql
+subClass: dynamodb
+
+hashKey:
+    name: id
+    type: String

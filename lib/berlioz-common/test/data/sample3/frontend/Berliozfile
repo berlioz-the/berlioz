@@ -1,0 +1,17 @@
+---
+kind: service
+cluster: fundme
+name: frontend
+
+provides:
+    default:
+        port: 5000
+        protocol: http
+        load-balance: true
+
+consumes:
+    - service: api
+
+resources:
+    memory:
+        min: 100

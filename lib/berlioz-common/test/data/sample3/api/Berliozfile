@@ -1,0 +1,18 @@
+---
+kind: service
+cluster: fundme
+name: api
+
+provides:
+    default:
+        port: 3000
+        protocol: http
+        load-balance: true
+
+consumes:
+    - service: redis
+    - database: donations
+    
+resources:
+    memory:
+        min: 100

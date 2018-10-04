@@ -1,0 +1,26 @@
+- kind: policy
+  name: scale
+  deployment: local
+  service: frontend
+  config:
+    desired: 4
+
+- kind: policy
+  name: scale
+  deployment: prod
+  service: frontend
+  config:
+    desired: 3
+
+- kind: policy
+  name: scale
+  deployment: test
+  service: frontend
+  config:
+    desired: 2
+
+- kind: policy
+  name: scale
+  service: redis
+  config:
+    desired: 3

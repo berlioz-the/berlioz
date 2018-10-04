@@ -1,0 +1,33 @@
+---
+kind: service
+cluster: fundme
+name: redis
+identity:
+    kind: sequential
+
+code:
+    kind: docker
+    image: berliozcloud/redis
+
+provides:
+    default:
+        port: 6379
+        protocol: tcp
+        reserved: true
+    gossip:
+        port: 16379
+        protocol: tcp
+        reserved: true
+
+consumes:
+    - service: redis
+      endpoint: default
+    - service: redis
+      endpoint: gossip
+
+environment:
+    replica_count: 0
+
+resources:
+    memory:
+        min: 400
