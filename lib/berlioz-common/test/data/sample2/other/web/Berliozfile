@@ -1,0 +1,13 @@
+---
+kind: service
+cluster: other
+name: web
+
+provides:
+    default:
+        port: 3000
+        protocol: http
+
+resources:
+    memory:
+        min: 100

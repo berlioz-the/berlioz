@@ -1,0 +1,9 @@
+---
+kind: cluster
+name: other
+
+
+provides:
+    web:
+        service: web
+        public: true

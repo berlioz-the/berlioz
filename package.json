@@ -1,6 +1,6 @@
 {
   "name": "berlioz",
-  "version": "1.0.140",
+  "version": "1.0.141",
   "description": "Microservices deployment service for AWS",
   "main": "index.js",
   "preferGlobal": true,
@@ -69,5 +69,9 @@
     "orchestration",
     "orchestrator",
     "container orchestration"
-  ]
+  ],
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "should": "^13.2.3"
+  }
 }

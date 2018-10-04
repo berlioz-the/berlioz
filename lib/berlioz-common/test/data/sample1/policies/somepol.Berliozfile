@@ -1,0 +1,10 @@
+- kind: policy
+  name: somepol
+  deployment: prod
+  value: false
+
+- kind: policy
+  name: somepol
+  deployment: prod
+  service: web
+  value: true

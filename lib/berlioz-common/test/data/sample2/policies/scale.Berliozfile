@@ -1,0 +1,32 @@
+- kind: policy
+  name: scale
+  cluster: hello
+  service: web
+  deployment: prod
+  config:
+    min: 100
+    max: 200
+
+- kind: policy
+  name: scale
+  service: web
+  deployment: test
+  config:
+    min: 10
+    max: 15
+
+- kind: policy
+  name: scale
+  service: web
+  deployment: local
+  config:
+    min: 5
+    max: 6
+
+- kind: policy
+  name: scale
+  cluster: sample
+  service: web
+  config:
+    min: 2
+    max: 3
