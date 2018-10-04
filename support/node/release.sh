@@ -26,9 +26,19 @@ fi
 
 # docker login
 
+cd $MY_DIR/8
+docker build . -t berlioz-node-8
+docker tag berlioz-node-8 berliozcloud/node-8
+docker push berliozcloud/node-8
+
 cd $MY_DIR/9
 docker build . -t berlioz-node-9
 docker tag berlioz-node-9 berliozcloud/node-9
 docker push berliozcloud/node-9
+
+cd $MY_DIR/10
+docker build . -t berlioz-node-10
+docker tag berlioz-node-10 berliozcloud/node-10
+docker push berliozcloud/node-10
 
 # docker logout

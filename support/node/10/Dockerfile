@@ -1,4 +1,4 @@
-FROM node:9-alpine
+FROM node:10-alpine
 
 RUN npm install aws-sdk -g
 
