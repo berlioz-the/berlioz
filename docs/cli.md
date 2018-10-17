@@ -23,26 +23,12 @@ cluster_one/
         Dockerfile
 ```
 
-## cluster describe
-
-
-Displays cluster definition contents.
-
-Will output cluster, service and other resource definitions of the cluster. Optionally a version can be specified. Refer to [cluster versions](#cluster-versions) for the version history.
-
 ## cluster list
 
 
 Outputs the list of cluster definitions.
 
 Those are the clusters published using [push](#push) command. Please note that the output of this command does not display clusters that are currently deployed. Refer to [deployment cluster list](#deployment-cluster-list) for see deployed clusters.
-
-## cluster versions
-
-
-Outputs cluster definition version history.
-
-The version from this command can be used to output definitions of a particular version using [cluster describe](#cluster-describe) command.
 
 ## deployment clusters
 
@@ -74,11 +60,6 @@ Displays dynamic deployment configuration.
 
 
 Outputs the list of deployment definitions.
-
-## deployment processor logs
-
-
-Outputs logs of berlioz deployer robot.
 
 ## deployment set-config
 

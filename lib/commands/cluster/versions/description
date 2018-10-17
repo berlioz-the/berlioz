@@ -1,4 +1,0 @@
-Outputs cluster definition version history.
-
-The version from this command can be used to output definitions of
-a particular version using ${command:cluster describe} command.

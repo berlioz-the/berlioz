@@ -1,5 +1,0 @@
-Displays cluster definition contents.
-
-Will output cluster, service and other resource definitions of the cluster.
-Optionally a version can be specified. Refer to ${command:cluster versions}
-for the version history.

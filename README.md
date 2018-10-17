@@ -53,10 +53,11 @@ to obtain AWS key and secret.
 ```
 $ berlioz signup
 $ berlioz provider create --name myaws --kind aws --key <key> --secret <secret>
-$ berlioz deployment create --name prod --provider myaws --region us-east-1
-$ berlioz push
+$ berlioz deployment create --name prod --provider myaws
+$ berlioz login --region <...>
+$ berlioz push --region <...>
 $ berlioz run --deployment prod
-$ berlioz status
+$ berlioz status --region <...>
 $ berlioz endpoints --deployment prod
 ```
 
@@ -69,9 +70,10 @@ $ berlioz local push-run
 ```
 and then, to the cloud:
 ```
-$ berlioz push
+$ berlioz login --region <...>
+$ berlioz push --region <...>
 $ berlioz run --deployment prod
-$ berlioz status
+$ berlioz status --region <...>
 $ berlioz endpoints --deployment prod
 ```
 
