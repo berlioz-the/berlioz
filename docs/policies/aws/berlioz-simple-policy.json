@@ -1,0 +1,49 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Deny",
+            "Action": [
+                "iam:DeactivateMFADevice",
+                "iam:DeleteAccessKey",
+                "iam:DeleteGroup",
+                "iam:UpdateGroup",
+                "iam:CreateVirtualMFADevice",
+                "iam:CreateSAMLProvider",
+                "iam:CreateUser",
+                "iam:CreateAccessKey",
+                "iam:CreateLoginProfile",
+                "iam:AddUserToGroup",
+                "iam:RemoveUserFromGroup",
+                "iam:EnableMFADevice",
+                "iam:ResyncMFADevice",
+                "iam:CreateAccountAlias",
+                "iam:DetachGroupPolicy",
+                "iam:DetachUserPolicy",
+                "iam:DeleteAccountAlias",
+                "iam:UpdateSAMLProvider",
+                "iam:DeleteLoginProfile",
+                "iam:ChangePassword",
+                "iam:PutGroupPolicy",
+                "iam:UpdateLoginProfile",
+                "iam:CreateGroup",
+                "iam:UpdateUser",
+                "iam:PutUserPermissionsBoundary",
+                "iam:DeleteUserPolicy",
+                "iam:AttachUserPolicy",
+                "iam:UpdateAccessKey",
+                "iam:DeleteUser",
+                "iam:DeleteUserPermissionsBoundary",
+                "iam:TagUser",
+                "iam:UntagUser",
+                "iam:UpdateAccountPasswordPolicy",
+                "iam:DeleteVirtualMFADevice",
+                "iam:AttachGroupPolicy",
+                "iam:PutUserPolicy",
+                "iam:DeleteGroupPolicy",
+                "iam:DeleteSAMLProvider"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
