@@ -51,20 +51,10 @@ Deletes an existing deployment definition.
 
 All running clusters for this definition will be undeployed.
 
-## deployment get-configs
-
-
-Displays dynamic deployment configuration.
-
 ## deployment list
 
 
 Outputs the list of deployment definitions.
-
-## deployment set-config
-
-
-Sets up deployment dynamic configuration.
 
 ## deployment versions
 
@@ -72,18 +62,6 @@ Sets up deployment dynamic configuration.
 Outputs the deployment versions.
 
 The result of this command can be used to downgrade/upgrade to a particular version using [run](#run) command.
-
-## dns get
-
-
-Returns configured service domain name for the deployment.
-
-## dns set
-
-
-Sets service domain name for the deployment.
-
-Used for service endpoints where dns is turned on.
 
 ## endpoint
 
@@ -211,6 +189,42 @@ Follow these steps to obtain "key" and "secret":
  8. Once you provide the access and secret keys to berlioz command line make sure you discard the keys. 
 
 
+## provider create aws
+
+
+Links cloud provider account to Berlioz.
+
+You can link as many AWS accounts as needed.
+
+Follow these steps to obtain "key" and "secret": 
+ 1. Login to AWS Account https://console.aws.amazon.com/console/home 
+ 2. Navigate to **IAM** (i.e. Identity and Access Management) 
+ 3. Select **Users** Menu. 
+ 4. Select the admin user or create a new one. 
+ 5. Select **Security credentials** tab. 
+ 6. Click **Create access key** button. 
+ 7. Save **Access key ID** and **Secret access key** values. You may need to click the **Show** link to fully reveal the secret key. 
+ 8. Once you provide the access and secret keys to berlioz command line make sure you discard the keys. 
+
+
+## provider create gcp
+
+
+Links GCP account to Berlioz.
+
+You can link as many AWS accounts as needed. The "kind" argument should be "aws".
+
+Follow these steps to obtain "key" and "secret": 
+ 1. Login to GCP https://cloud.google.com/ 
+ 2. Select your **Project**
+ 3. Navigate to **IAM & admin** \ **Service accounts** menu. 
+ 4. Click **Create Service Account** and fill in account details. 
+ 5. Assign **Kubernetes Engine Admin** role. 
+ 6. Click **Create Key** button. 
+ 7. Choose **JSON** key option and download the key file. 
+ 8. Once you link the key file with Berlioz, you can delete the downloaded key file.
+
+
 ## provider delete
 
 
@@ -246,16 +260,6 @@ Optionally a cluster and region can be specified to limit the deployment scope, 
 The command will preview the changes to be made and trigger deployment process. To monitor the process refer to [status](#status) command.
 
 Also, once the deployment is fully up and running you can access the public endpoints using [endpoints](#endpoints) command.
-
-## scale get
-
-
-Returns configured number of running instances for a service.
-
-## scale set
-
-
-Sets the number of running instances for a service.
 
 ## signup
 

@@ -1,0 +1,13 @@
+Links GCP account to Berlioz.
+
+You can link as many AWS accounts as needed. The "kind" argument should be "aws".
+
+Follow these steps to obtain "key" and "secret": <br/>
+1. Login to GCP https://cloud.google.com/ <br/>
+2. Select your **Project**<br/>
+3. Navigate to **IAM & admin** \ **Service accounts** menu. <br/>
+4. Click **Create Service Account** and fill in account details. <br/>
+5. Assign **Kubernetes Engine Admin** role. <br/>
+6. Click **Create Key** button. <br/>
+7. Choose **JSON** key option and download the key file. <br/>
+8. Once you link the key file with Berlioz, you can delete the downloaded key file.<br/>
