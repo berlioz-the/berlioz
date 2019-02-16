@@ -1,6 +1,6 @@
 {
   "name": "berlioz",
-  "version": "1.0.152",
+  "version": "1.0.153",
   "description": "Microservices deployment service for AWS",
   "main": "index.js",
   "preferGlobal": true,
@@ -27,7 +27,7 @@
     "node-find-files": "0.0.4",
     "nodejs-fs-utils": "^1.1.1",
     "pretty-ms": "^3.1.0",
-    "processing-tools": "^1.0.101",
+    "processing-tools": "^1.0.102",
     "prompt": "^1.0.0",
     "recursive-copy": "^2.0.9",
     "request": "^2.88.0",
