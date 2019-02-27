@@ -73,13 +73,6 @@ Outputs publicly exposed service endpoint.
 
 Outputs publicly exposed service endpoints in a tabular format.
 
-## local account
-
-
-Setup AWS account profile name for local deployment native resources.
-
-Berlioz allows use of cloud native resources like DynamoDB and Kinesis. In order to have access to such services even when deploying on a local workstation, we need an access to some AWS account to configure those resources. Specify AWS profile to use for that purpose. Note, that this account does not have to be the one used in other deployments.
-
 ## local build-run
 
 
@@ -96,6 +89,48 @@ Outputs publicly exposed endpoints for local deployment
 
 
 Displays dynamic local deployment configuration.
+
+## local provider aws activate
+
+
+Setup AWS account profile name for local deployment native resources.
+
+Berlioz allows use of cloud native resources like DynamoDB and Kinesis. In order to have access to such services even when deploying on a local workstation, we need an access to some AWS account to configure those resources. Specify AWS profile to use for that purpose. Note, that this account does not have to be the one used in other deployments.
+
+## local provider aws clear
+
+
+Setup AWS account profile name for local deployment native resources.
+
+Berlioz allows use of cloud native resources like DynamoDB and Kinesis. In order to have access to such services even when deploying on a local workstation, we need an access to some AWS account to configure those resources. Specify AWS profile to use for that purpose. Note, that this account does not have to be the one used in other deployments.
+
+## local provider aws set
+
+
+Setup AWS account profile name for local deployment native resources.
+
+Berlioz allows use of cloud native resources like DynamoDB and Kinesis. In order to have access to such services even when deploying on a local workstation, we need an access to some AWS account to configure those resources. Specify AWS profile to use for that purpose. Note, that this account does not have to be the one used in other deployments.
+
+## local provider gcp activate
+
+
+Setup AWS account profile name for local deployment native resources.
+
+Berlioz allows use of cloud native resources like DynamoDB and Kinesis. In order to have access to such services even when deploying on a local workstation, we need an access to some AWS account to configure those resources. Specify AWS profile to use for that purpose. Note, that this account does not have to be the one used in other deployments.
+
+## local provider gcp clear
+
+
+Setup AWS account profile name for local deployment native resources.
+
+Berlioz allows use of cloud native resources like DynamoDB and Kinesis. In order to have access to such services even when deploying on a local workstation, we need an access to some AWS account to configure those resources. Specify AWS profile to use for that purpose. Note, that this account does not have to be the one used in other deployments.
+
+## local provider gcp set
+
+
+Setup AWS account profile name for local deployment native resources.
+
+Berlioz allows use of cloud native resources like DynamoDB and Kinesis. In order to have access to such services even when deploying on a local workstation, we need an access to some AWS account to configure those resources. Specify AWS profile to use for that purpose. Note, that this account does not have to be the one used in other deployments.
 
 ## local push
 
