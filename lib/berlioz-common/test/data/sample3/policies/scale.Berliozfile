@@ -1,26 +1,34 @@
-- kind: policy
-  name: scale
+---
+kind: policy
+name: scale
+target:
   deployment: local
   service: frontend
-  config:
-    desired: 4
+config:
+  desired: 4
 
-- kind: policy
-  name: scale
+---
+kind: policy
+name: scale
+target:
   deployment: prod
   service: frontend
-  config:
-    desired: 3
+config:
+  desired: 3
 
-- kind: policy
-  name: scale
+---
+kind: policy
+name: scale
+target:
   deployment: test
   service: frontend
-  config:
-    desired: 2
+config:
+  desired: 2
 
-- kind: policy
-  name: scale
+---
+kind: policy
+name: scale
+target:
   service: redis
-  config:
-    desired: 3
+config:
+  desired: 3

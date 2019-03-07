@@ -1,41 +1,50 @@
-- kind: policy
-  name: scale
+---
+kind: policy
+name: scale
+target:
   cluster: hello
   service: web
   deployment: prod
-  config:
-    desired: 150
-    min: 100
-    max: 200
+config:
+  desired: 150
+  min: 100
+  max: 200
 
-
-- kind: policy
-  name: scale
+---
+kind: policy
+name: scale
+target:
   service: web
   deployment: test
-  config:
-    min: 10
-    max: 15
+config:
+  min: 10
+  max: 15
 
-- kind: policy
-  name: scale
+---
+kind: policy
+name: scale
+target:
   service: web
   deployment: local
-  config:
-    min: 5
-    max: 6
+config:
+  min: 5
+  max: 6
 
-- kind: policy
-  name: scale
+---
+kind: policy
+name: scale
+target:
   service: app
-  config:
-    min: 1
-    max: 2
+config:
+  min: 1
+  max: 2
 
-- kind: policy
-  name: scale
+---
+kind: policy
+name: scale
+target:
   cluster: sample
   service: web
-  config:
-    min: 2
-    max: 3
+config:
+  min: 2
+  max: 3

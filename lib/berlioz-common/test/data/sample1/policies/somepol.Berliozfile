@@ -1,10 +1,16 @@
-- kind: policy
-  name: somepol
+---
+kind: policy
+name: somepol
+target:
   deployment: prod
+config:
   value: false
 
-- kind: policy
-  name: somepol
+---
+kind: policy
+name: somepol
+target:
   deployment: prod
   service: web
+config:
   value: true

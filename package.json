@@ -1,6 +1,6 @@
 {
   "name": "berlioz",
-  "version": "1.0.162",
+  "version": "1.0.163",
   "description": "Microservices deployment service for AWS",
   "main": "index.js",
   "preferGlobal": true,
@@ -13,7 +13,7 @@
     "aws-sdk": "2.235.1",
     "aws-sdk-wrapper": "^1.1.86",
     "awscred": "^1.4.1",
-    "berlioz-gcp-sdk": "^1.0.29",
+    "berlioz-gcp-sdk": "^1.0.30",
     "child-process-promise": "^2.2.1",
     "chrome-launcher": "^0.10.5",
     "cli-table": "^0.3.1",
@@ -22,6 +22,7 @@
     "dockerode": "^2.5.7",
     "execa": "^1.0.0",
     "ip": "^1.1.5",
+    "js-yaml": "^3.12.2",
     "keypair": "^1.0.1",
     "memory-stream": "0.0.3",
     "mkdirp": "^0.5.1",
@@ -45,7 +46,6 @@
     "vorpal": "^1.12.0",
     "wildcard": "^1.1.2",
     "wordwrap": "^1.0.0",
-    "yamljs": "^0.3.0",
     "optional-require": "^1.0.0"
   },
   "bin": {
