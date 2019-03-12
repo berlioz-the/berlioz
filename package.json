@@ -1,6 +1,6 @@
 {
   "name": "berlioz",
-  "version": "1.0.164",
+  "version": "1.0.165",
   "description": "Microservices deployment service for AWS",
   "main": "index.js",
   "preferGlobal": true,
@@ -13,7 +13,7 @@
     "aws-sdk": "2.235.1",
     "aws-sdk-wrapper": "^1.1.86",
     "awscred": "^1.4.1",
-    "berlioz-gcp-sdk": "^1.0.30",
+    "berlioz-gcp-sdk": "^1.0.33",
     "child-process-promise": "^2.2.1",
     "chrome-launcher": "^0.10.5",
     "cli-table": "^0.3.1",
