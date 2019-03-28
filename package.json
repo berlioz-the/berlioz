@@ -1,6 +1,6 @@
 {
   "name": "berlioz",
-  "version": "1.0.172",
+  "version": "1.0.173",
   "description": "Microservices deployment service for AWS",
   "main": "index.js",
   "preferGlobal": true,
@@ -13,7 +13,7 @@
     "aws-sdk": "2.235.1",
     "aws-sdk-wrapper": "^1.1.86",
     "awscred": "^1.4.1",
-    "berlioz-gcp-sdk": "^1.0.47",
+    "berlioz-gcp-sdk": "^1.0.49",
     "child-process-promise": "^2.2.1",
     "chrome-launcher": "^0.10.5",
     "cli-table": "^0.3.1",
@@ -49,7 +49,10 @@
     "wordwrap": "^1.0.0",
     "nanoid": "^2.0.1",
     "nanoid-dictionary": "^2.0.0",
-    "optional-require": "^1.0.0"
+    "optional-require": "^1.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "reloadify": "^0.2.2"
   },
   "bin": {
     "berlioz": "./bin/berlioz.js",

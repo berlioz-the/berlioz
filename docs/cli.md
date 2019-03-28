@@ -30,6 +30,11 @@ Outputs the list of cluster definitions.
 
 Those are the clusters published using [push](#push) command. Please note that the output of this command does not display clusters that are currently deployed. Refer to [deployment cluster list](#deployment-cluster-list) for see deployed clusters.
 
+## deployment cluster definitions
+
+
+Outputs the list of deployed clusters.
+
 ## deployment clusters
 
 
@@ -316,6 +321,11 @@ The name of the deployment definition should be specified.
 Optionally a cluster and region can be specified to limit the deployment scope, otherwise all clusters across all regions will undeployed. Please note that the changes will be made to the specified deployment only. Any other deployment definition will be unchanged.
 
 The command will preview the changes to be made and trigger deployment process. To monitor the process refer to [status](#status) command.
+
+## ui
+
+
+Runs interactive UI
 
 ## wait
 
