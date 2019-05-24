@@ -23,6 +23,11 @@ cluster_one/
         Dockerfile
 ```
 
+## change-password
+
+
+Initiates Berlioz account password reset.
+
 ## cluster list
 
 
