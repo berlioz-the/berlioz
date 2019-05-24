@@ -216,24 +216,6 @@ Should be used from the root directory of the project.
 
 Please not that the tool uses PlantUML and GraphViz for rendering. PlantUML is already packaged with Berlioz. For GraphViz installation please refer to https://graphviz.gitlab.io/download/
 
-## provider create
-
-
-Links cloud provider account to Berlioz.
-
-You can link as many AWS accounts as needed. The "kind" argument should be "aws".
-
-Follow these steps to obtain "key" and "secret": 
- 1. Login to AWS Account https://console.aws.amazon.com/console/home 
- 2. Navigate to **IAM** (i.e. Identity and Access Management) 
- 3. Select **Users** Menu. 
- 4. Select the admin user or create a new one. 
- 5. Select **Security credentials** tab. 
- 6. Click **Create access key** button. 
- 7. Save **Access key ID** and **Secret access key** values. You may need to click the **Show** link to fully reveal the secret key. 
- 8. Once you provide the access and secret keys to berlioz command line make sure you discard the keys. 
-
-
 ## provider create aws
 
 
