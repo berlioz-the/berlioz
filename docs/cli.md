@@ -314,6 +314,11 @@ The command will preview the changes to be made and trigger deployment process. 
 
 Runs interactive UI
 
+## validate
+
+
+Validates Berliozfile definitions within the project
+
 ## wait
 
 

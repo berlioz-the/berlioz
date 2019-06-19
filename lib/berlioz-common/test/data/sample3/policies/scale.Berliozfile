@@ -3,7 +3,7 @@ kind: policy
 name: scale
 target:
   deployment: local
-  service: frontend
+  service: front
 config:
   desired: 4
 
@@ -12,7 +12,7 @@ kind: policy
 name: scale
 target:
   deployment: prod
-  service: frontend
+  service: front
 config:
   desired: 3
 
@@ -21,7 +21,7 @@ kind: policy
 name: scale
 target:
   deployment: test
-  service: frontend
+  service: front
 config:
   desired: 2
 

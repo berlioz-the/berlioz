@@ -6,6 +6,6 @@ provides:
     api:
         service: api
         public: true
-    frontend:
-        service: frontend
+    front:
+        service: front
         public: true
