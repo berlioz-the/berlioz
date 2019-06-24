@@ -100,6 +100,11 @@ Outputs publicly exposed endpoints for local deployment
 
 Displays dynamic local deployment configuration.
 
+## local invalidate
+
+
+Restarts stopped docker containers.
+
 ## local provider aws activate
 
 
