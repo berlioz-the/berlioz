@@ -83,6 +83,11 @@ Outputs publicly exposed service endpoint.
 
 Outputs publicly exposed service endpoints in a tabular format.
 
+## kubectl connect
+
+
+Configure kubectl to current kubernetes cluster.
+
 ## local build-run
 
 
