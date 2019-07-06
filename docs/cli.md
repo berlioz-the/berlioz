@@ -88,6 +88,16 @@ Outputs publicly exposed service endpoints in a tabular format.
 
 Configure kubectl to current kubernetes cluster.
 
+## kubectl drain
+
+
+Changes Kubernetes cluster default node pool size to zero.
+
+## kubectl resize
+
+
+Changes Kubernetes cluster default node pool size.
+
 ## local build-run
 
 
