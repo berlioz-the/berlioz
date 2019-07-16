@@ -1,19 +1,28 @@
 {
   "name": "berlioz",
-  "version": "1.0.200",
-  "description": "Microservices deployment service for AWS",
+  "version": "1.0.202",
+  "description": "Berlioz - cloud deployment and migration services",
   "main": "index.js",
   "preferGlobal": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node ./scripts/postinstall.js"
   },
+  "files": [
+    "bin",
+    "lib",
+    "scripts/postinstall.js",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {
     "archiver": "^2.1.1",
     "aws-arn-parser": "^1.0.1",
     "aws-sdk": "^2.485.0",
-    "aws-sdk-wrapper": "^1.1.95",
+    "aws-sdk-wrapper": "^1.1.96",
     "awscred": "^1.4.2",
-    "berlioz-gcp-sdk": "^1.0.58",
+    "berlioz-gcp-sdk": "^1.0.59",
     "child-process-promise": "^2.2.1",
     "chrome-launcher": "^0.10.7",
     "cli-table": "^0.3.1",
@@ -76,10 +85,14 @@
     "microservices",
     "container",
     "docker",
+    "gcp",
+    "google cloud platform",
     "aws",
     "amazon",
     "cloud",
     "deployment",
+    "delivery",
+    "ci/cd",
     "provision",
     "orchestration",
     "orchestrator",
