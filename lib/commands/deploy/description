@@ -1,0 +1,3 @@
+Deploys applications to the cloud.
+
+This command combines 'berlioz push' and 'berlioz run' commands into one.

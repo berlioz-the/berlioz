@@ -35,6 +35,13 @@ Outputs the list of cluster definitions.
 
 Those are the clusters published using [push](#push) command. Please note that the output of this command does not display clusters that are currently deployed. Refer to [deployment cluster list](#deployment-cluster-list) for see deployed clusters.
 
+## deploy
+
+
+Deploys applications to the cloud.
+
+This command combines 'berlioz push' and 'berlioz run' commands into one.
+
 ## deployment cluster definitions
 
 
