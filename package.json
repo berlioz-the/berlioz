@@ -1,6 +1,6 @@
 {
   "name": "berlioz",
-  "version": "1.0.204",
+  "version": "1.0.205",
   "description": "Berlioz - cloud deployment and migration services",
   "main": "index.js",
   "preferGlobal": true,
@@ -39,7 +39,7 @@
     "mkdirp": "^0.5.1",
     "nodejs-fs-utils": "^1.1.2",
     "pretty-ms": "^3.1.0",
-    "processing-tools": "^1.0.108",
+    "processing-tools": "^1.0.112",
     "prompt": "^1.0.0",
     "public-ip": "^3.1.0",
     "recursive-copy": "^2.0.10",
