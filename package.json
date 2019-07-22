@@ -1,6 +1,6 @@
 {
   "name": "berlioz",
-  "version": "1.0.205",
+  "version": "1.0.206",
   "description": "Berlioz - cloud deployment and migration services",
   "main": "index.js",
   "preferGlobal": true,
@@ -62,9 +62,8 @@
     "nanoid": "^2.0.3",
     "nanoid-dictionary": "^2.0.0",
     "optional-require": "^1.0.0",
-    "ejs": "^2.6.1",
-    "express": "^4.16.4",
-    "reloadify": "^0.2.2",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
     "uuid": "^3.3.2"
   },
   "bin": {
