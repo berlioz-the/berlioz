@@ -36,8 +36,8 @@ name: scale
 target:
   service: app
 config:
-  min: 1
-  max: 2
+  min: 5
+  max: 11
 
 ---
 kind: policy
