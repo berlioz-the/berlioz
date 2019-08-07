@@ -1,6 +1,6 @@
 {
   "name": "berlioz",
-  "version": "1.0.211",
+  "version": "1.0.212",
   "description": "Berlioz - cloud deployment and migration services",
   "main": "index.js",
   "preferGlobal": true,
@@ -99,6 +99,7 @@
   ],
   "devDependencies": {
     "mocha": "^5.2.0",
-    "should": "^13.2.3"
+    "should": "^13.2.3",
+    "the-logger": "^1.1.20"
   }
 }
