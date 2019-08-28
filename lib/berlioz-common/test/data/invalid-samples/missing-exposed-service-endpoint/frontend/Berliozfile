@@ -1,15 +1,13 @@
 ---
 kind: service
-cluster: hellozzzzzzzzz
-name: web
+cluster: fundme
+name: front
 
 provides:
     default:
-        port: 3000
+        port: 5000
         protocol: http
-
-consumes:
-    - service: app
+        load-balance: true
 
 resources:
     memory:

@@ -1,0 +1,14 @@
+---
+kind: service
+cluster: fundme
+name: front
+
+provides:
+    default:
+        port: 5000
+        protocol: http
+        load-balance: true
+
+resources:
+    memory:
+        min: 100

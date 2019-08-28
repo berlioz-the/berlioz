@@ -1,0 +1,8 @@
+---
+kind: cluster
+name: fundme
+
+provides:
+    front:
+        service: xxx
+        public: true

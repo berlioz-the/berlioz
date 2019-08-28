@@ -1,0 +1,26 @@
+---
+kind: service
+cluster: hello
+name: web
+
+provides:
+    default:
+        port: 3000
+        protocol: http
+
+consume:
+  - service: app
+
+resources:
+    memory:
+        min: 100
+
+---
+kind: service
+cluster: hello
+name: app
+
+provides:
+    default:
+        port: 4000
+        protocol: http

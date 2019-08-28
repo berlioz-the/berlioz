@@ -3,13 +3,13 @@ kind: service
 cluster: hello
 name: web
 
-provide:
+provides:
     default:
         port: 3000
         protocol: http
 
 consumes:
-    - service: app
+  - cluster: app
 
 resources:
     memory:
