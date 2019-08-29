@@ -1,6 +1,6 @@
 {
   "name": "berlioz",
-  "version": "1.0.219",
+  "version": "1.0.220",
   "description": "Berlioz - cloud deployment and migration services",
   "main": "index.js",
   "preferGlobal": true,
@@ -22,7 +22,7 @@
     "aws-sdk": "^2.485.0",
     "aws-sdk-wrapper": "^1.1.103",
     "awscred": "^1.4.2",
-    "berlioz-gcp-sdk": "^1.0.60",
+    "berlioz-gcp-sdk": "^1.0.61",
     "child-process-promise": "^2.2.1",
     "chrome-launcher": "^0.10.7",
     "cli-table": "^0.3.1",
