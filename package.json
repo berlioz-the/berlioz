@@ -1,6 +1,6 @@
 {
   "name": "berlioz",
-  "version": "1.0.220",
+  "version": "1.0.221",
   "description": "Berlioz - cloud deployment and migration services",
   "main": "index.js",
   "preferGlobal": true,
