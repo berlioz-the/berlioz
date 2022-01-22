@@ -59,7 +59,7 @@
     "word-wrap": "^1.2.3",
     "wordwrap": "^1.0.0",
     "@hapi/joi": "^15.1.0",
-    "nanoid": "^2.0.3",
+    "nanoid": "^3.1.31",
     "nanoid-dictionary": "^2.0.0",
     "optional-require": "^1.0.0",
     "ejs": "^2.6.2",
